@@ -1,0 +1,3 @@
+username = svc-admin
+password = management2005
+domain   = spookysec.local
